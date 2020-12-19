@@ -1,0 +1,68 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
+
+// Beach Cleanup
+// {
+//   "compilerOptions": {
+//     "allowJs": true,
+//     "allowSyntheticDefaultImports": true,
+//     "esModuleInterop": true,
+//     "isolatedModules": true,
+//     "jsx": "react",
+//     "lib": ["es6"],
+//     "moduleResolution": "node",
+//     "noEmit": true,
+//     "strict": true,
+//     "target": "esnext"
+//   },
+//   "exclude": [
+//     "node_modules",
+//     "babel.config.js",
+//     "metro.config.js",
+//     "jest.config.js"
+//   ]
+// }
+
+// Smart Highlights
+// {
+//   "compilerOptions": {
+//     "allowJs": true,
+//     "rootDir": "src",
+//     "outDir": "build",
+//     "module": "commonjs",
+//     "target": "es6",
+//     "jsx": "react", // default was preserve
+//     "lib": ["dom", "es6"],
+//     "strict": true,
+//     "noEmit": true,
+//     "isolatedModules": true,
+//     "esModuleInterop": true,
+//     "noUnusedLocals": false,
+//     "baseUrl": "src",
+//     "paths": {
+//       "test-utils": ["./utils/test-utils"]
+//     },
+//     "types": ["node", "jest", "@testing-library/jest-dom"],
+//     "typeRoots": ["./src/types", "node_modules/@types"]
+//     // "noImplicitAny": false
+//   },
+//   "include": ["src/**/*", "cypress"],
+//   "exclude": ["node_modules", "public", ".cache", "jest", "cypress"]
+// }

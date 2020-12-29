@@ -17,7 +17,7 @@ const Nav = () => (
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        variant: 'containers.page',
+        p: '10px',
         height: '100%',
       }}>
       <Link href="/">
@@ -26,6 +26,16 @@ const Nav = () => (
       <Link href="/leagues">
         <a sx={{ color: 'text', fontSize: 3, cursor: 'pointer' }}>Leagues</a>
       </Link>
+      <a
+        sx={{
+          color: 'text',
+          fontSize: 3,
+          cursor: 'pointer',
+        }}
+        href={process.env.HELP_APP_URL}
+        target="__blank">
+        Help
+      </a>
     </nav>
   </header>
 );

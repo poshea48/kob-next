@@ -35,7 +35,7 @@ const theme: Theme = merge(
         textAlign: 'center',
         // background: 'rgb(6,6,6)',
         background:
-          'linear-gradient(180deg, rgba(6,6,6,1) 0%, rgba(249,207,0,1) 25%, rgba(249,207,0,1) 75%, rgba(6,6,6,1) 100%)',
+          'linear-gradient(180deg, rgba(238,41,92,1) 0%, rgba(249,207,0,1) 25%, rgba(249,207,0,1) 75%, rgba(238,41,92,1) 100%)',
       },
       page: {
         display: 'flex',

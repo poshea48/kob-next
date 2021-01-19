@@ -1,6 +1,7 @@
 import { roboto } from '@theme-ui/presets';
 import { Theme, merge } from 'theme-ui';
 import { base as preset } from '@theme-ui/presets';
+import { VBCOLORS } from './src/utils/colors';
 
 const theme: Theme = merge(
   preset as Theme,
@@ -9,6 +10,11 @@ const theme: Theme = merge(
     colors: {
       ...roboto.colors,
     },
+    breakpoints: ['320px', '480px', '768px', '992px', '1200px'],
+    main: {
+      width: '100vw',
+      height: '100vh',
+    },
     containers: {
       card: {
         boxShadow: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
@@ -16,6 +22,20 @@ const theme: Theme = merge(
         borderColor: 'muted',
         borderRadius: '4px',
         p: 2,
+      },
+      volleyball: {
+        display: 'flex',
+        flexDirection: 'column',
+        width: ['100px', '150px', '200px'],
+
+        borderRadius: '10px',
+        p: 2,
+        justifyContent: 'center',
+        alignItems: 'center',
+        textAlign: 'center',
+        // background: 'rgb(6,6,6)',
+        background:
+          'linear-gradient(180deg, rgba(6,6,6,1) 0%, rgba(249,207,0,1) 25%, rgba(249,207,0,1) 75%, rgba(6,6,6,1) 100%)',
       },
       page: {
         display: 'flex',
@@ -28,9 +48,36 @@ const theme: Theme = merge(
         m: 0,
         mx: 'auto',
       },
+      link: {
+        fontSize: 3,
+        color: VBCOLORS.black,
+        fontWeight: 'bold',
+        p: 2,
+        cursor: 'pointer',
+        '&:hover': {
+          color: VBCOLORS.pink,
+          textDecoration: 'underline',
+        },
+      },
+      button: {
+        display: 'flex',
+        width: ['100px', '120px', '30%'],
+        maxWidth: '200px',
+        borderRadius: '10px',
+        borderWidth: '1px',
+        borderColor: 'text',
+        borderStyle: 'solid',
+        justifyContent: 'center',
+        alignItems: 'center',
+        p: 2,
+      },
     },
     styles: {
       ...roboto.styles,
+      root: {
+        ...roboto.styles.root,
+        backgroundColor: 'background',
+      },
     },
   } as Partial<Theme>,
 );

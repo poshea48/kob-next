@@ -2,15 +2,13 @@
 /** @jsxRuntime classic */
 import { jsx } from 'theme-ui';
 import Link from 'next/link';
+import { VBCOLORS } from '../utils/colors';
 
 const Nav = () => (
   <header
     sx={{
       height: '60px',
-      width: '100vw',
-      bg: 'primary',
-      borderBottom: '1px solid',
-      borderColor: 'primary',
+      bg: 'transparent',
     }}>
     <nav
       sx={{
@@ -21,21 +19,21 @@ const Nav = () => (
         height: '100%',
       }}>
       <Link href="/">
-        <a sx={{ fontWeight: 'bold', fontSize: 4, cursor: 'pointer' }}>Home</a>
+        <a
+          sx={{
+            variant: 'container.navLink',
+          }}>
+          Log in
+        </a>
       </Link>
       <Link href="/leagues">
-        <a sx={{ color: 'text', fontSize: 3, cursor: 'pointer' }}>Leagues</a>
+        <a
+          sx={{
+            variant: 'container.navLink',
+          }}>
+          Sign up
+        </a>
       </Link>
-      <a
-        sx={{
-          color: 'text',
-          fontSize: 3,
-          cursor: 'pointer',
-        }}
-        href={process.env.HELP_APP_URL}
-        target="__blank">
-        Help
-      </a>
     </nav>
   </header>
 );

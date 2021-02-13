@@ -4,12 +4,17 @@ import React from 'react';
 import { jsx } from 'theme-ui';
 import Link from 'next/link';
 import { VBCOLORS } from '../utils/colors';
+import Nav from '../components/Nav';
+import Logo from '../components/Logo';
 
 const Home = () => {
   return (
     <main sx={{ variant: 'main' }}>
+      <header sx={{ variant: 'containers.header' }}>
+        <Logo />
+        <Nav />
+      </header>
       <div sx={{ variant: 'containers.page' }}>
-        <h1 sx={{ fontSize: 8, mt: 0, mb: 4 }}>KOB Tracker</h1>
         <div
           sx={{
             display: 'flex',
@@ -18,12 +23,24 @@ const Home = () => {
           }}>
           <div sx={{ variant: 'containers.volleyball' }}>
             <Link href="/leagues">
-              <a sx={{ variant: 'containers.link' }}>Continous Play</a>
+              <a
+                sx={{
+                  variant: 'containers.link',
+                  fontFamily: 'headingSecondary',
+                }}>
+                Continous Play
+              </a>
             </Link>
           </div>
           <div sx={{ variant: 'containers.volleyball' }}>
             <Link href="/tournaments">
-              <a sx={{ variant: 'containers.link' }}>Tournament Play</a>
+              <a
+                sx={{
+                  variant: 'containers.link',
+                  fontFamily: 'headingSecondary',
+                }}>
+                Tournament Play
+              </a>
             </Link>
           </div>
         </div>

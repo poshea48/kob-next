@@ -10,6 +10,12 @@ const theme: Theme = merge(
     colors: {
       ...roboto.colors,
     },
+    fonts: {
+      ...roboto.fonts,
+      heading: 'Taviraj, serif',
+      headingSecondary: 'Atma, Fira Sans Extra Condensed, cursive',
+      body: 'Biryani, Sarala, Telex, sans-serif',
+    },
     breakpoints: ['320px', '480px', '768px', '992px', '1200px'],
     main: {
       width: '100vw',
@@ -22,6 +28,12 @@ const theme: Theme = merge(
         borderColor: 'muted',
         borderRadius: '4px',
         p: 2,
+      },
+      header: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: 2,
       },
       volleyball: {
         display: 'flex',
@@ -58,6 +70,12 @@ const theme: Theme = merge(
           color: VBCOLORS.pink,
           textDecoration: 'underline',
         },
+      },
+      navLink: {
+        fontWeight: 'bold',
+        fontSize: 4,
+        cursor: 'pointer',
+        color: VBCOLORS.black,
       },
       button: {
         display: 'flex',
